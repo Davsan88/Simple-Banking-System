@@ -25,3 +25,4 @@ class BankAccount {
     }
 };
 
+export { BankAccount };
