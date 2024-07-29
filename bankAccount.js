@@ -15,7 +15,9 @@ class BankAccount {
     withdraw(amount) {
         if (this.balance >= balance) {
             this.balance -= amount; // Access the current balance and substract the especific amount to it 
-        } 
+        } else {
+            console.log("You're broke!");
+        }
         
     }
     
