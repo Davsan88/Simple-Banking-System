@@ -8,14 +8,16 @@ class BankAccount {
 
     // Implement methods for depositing, withdrawing, and checking balance
     deposit(amount) {
-        this.balance += amount; // Access the current balance and add the deposit amount to it
+        this.balance += amount;
+        return `Deposited ${amount}. New Balance: ${this.balance}` // Access the current balance and add the deposit amount to it
     }
     
     withdraw(amount) {
         if (this.balance >= amount) {
-            this.balance -= amount; // Access the current balance and substract the specified amount from it 
+            this.balance -= amount;
+            return `Withdrew ${amount}. New Balance: ${this.balance}` // Access the current balance and substract the specified amount from it 
         } else {
-            console.log("You're broke!");
+            return 'You\'re broke!';
         }
         
     }
