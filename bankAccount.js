@@ -9,6 +9,7 @@ class BankAccount {
     // Implement methods for depositing, withdrawing, and checking balance
     deposit(amount) {
         this.balance += amount; // Access the current balance and add the deposit amount to it
+        console.log("New balance is:" + this.balance)
     }
 
     withdraw(amount) {
