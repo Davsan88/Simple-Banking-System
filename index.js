@@ -7,9 +7,9 @@ const account2 = new BankAccount("5678", "S. Sanchulla", 200);
 
 // Demonstrate the usage of methods
 console.log(account1.checkBalance()); // Should show initial balance
-account1.deposit(200);
+account1.deposit(100);
 console.log(account1.checkBalance()); // Should show updated balance after deposit
-account1.withdraw(50);
+account1.withdraw(200);
 console.log(account1.checkBalance()); // Should show updated balance after withdrawal
 
 console.log(account2.checkBalance()); // Should show initial balance
