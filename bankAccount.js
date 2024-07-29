@@ -13,13 +13,14 @@ class BankAccount {
     }
     
     withdraw(amount) {
-        this.balance -= amount; // Access the current balance and substract the especific amount to it 
+        if (!this.balance <= balance) {
+            this.balance -= amount; // Access the current balance and substract the especific amount to it 
+        } 
         
     }
     
     checkBalance() {
-        console.log("New balance is:" + this.balance);
-
+        return "New balance is:" + this.balance;
     }
 };
 
